@@ -1,0 +1,12 @@
+---
+# defaults file for lvm_partition
+vg_name: vg_data      # Name of the vg to create
+lv_name: lv_data      # Name of Logical Volume to create
+device: "/dev/sdb"    # Device physical volume/partition exists on
+add_space: '100'      # Percentage of drive to add to the VG?
+unit: '%'             # Unit type to use with parted
+mount_point: "/mnt"   # Where to mount the new lvm
+filesystem: ext4      # Filesystem to use for the new volume
+
+# Assume that the entire disk will be used and only one partition created.
+part_number: '1'
